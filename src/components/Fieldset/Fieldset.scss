@@ -1,0 +1,73 @@
+.fieldset {
+    border: 0;
+    padding: 0px;
+    width: 100%;
+
+    &-title {
+        display: block;
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-bottom: 10px;
+        font-size: 14px;
+    }
+
+    &-input {
+        border: 0;
+        height: 55px;   
+        width: 100%;
+        border-radius: 100px;
+        padding: 0 30px;
+        background: rgb(238,238,238);
+        background: linear-gradient(87deg, rgba(238,238,238,1) 0%, rgba(244,244,244,1) 100%);
+
+        &::placeholder {
+            font-weight: 500;
+            opacity: .5;
+        }
+    }
+
+    &-errorMsg {
+        color: red;
+        font-size: 13px;
+        padding-top: 5px;
+        padding-left: 20px;
+    }
+
+    &-checkboxWrap {
+        display: flex;
+        column-gap: 5px;
+
+        .fieldset-title {
+            padding: 0;
+            order: 2;
+            padding-left: 5px;
+        }
+    }
+
+    &-checkbox {
+        width: 15px;
+        height: 15px;
+        float: left;
+        order: 1;
+    }
+
+    &-checkboxFrame {
+        border: 2px solid #CE9F69;
+        border-radius: 5px;
+        width: 20px;
+        height: 20px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+
+        &-isActive {
+            background-color: #CE9F69;
+        }
+    }
+
+    &-checkbox {
+        display: none;
+    }
+}

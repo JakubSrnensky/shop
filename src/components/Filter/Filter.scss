@@ -1,0 +1,65 @@
+.filter {
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    z-index: 9;
+    background-color: white;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s linear;
+
+    &.isActive {
+        opacity: 1;
+        pointer-events: auto;
+        transition: opacity .2s linear;
+    }
+
+    &-buttonOpen {
+        position: absolute;
+        right: 12px;
+        top: 9px;
+        background-color: #CE9F69;
+        color: white;
+        width: 37px;
+        height: 37px;
+        border: 0;
+        padding: 0;
+        margin: 0;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-buttonClose {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 20px;
+        right: 20px;
+        background-color: #CE9F69;
+        border: 0;
+        width: 37px;
+        height: 37px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.16);
+        color: white;
+    }
+
+    &-priceRange {
+        width: 100%;
+    }
+
+    &-grid {
+        display: flex;
+        flex-wrap: wrap;
+
+        .fieldset {
+            width: 50%;
+            margin: 0;
+        }
+    }
+}

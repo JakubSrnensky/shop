@@ -1,0 +1,118 @@
+.card {
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.07);
+    display: inline-block;
+    border-radius: 30px;
+    padding: 10px;
+
+    &-item {
+        position: relative;
+        text-decoration: none;
+        width: 100%;
+        color: black;
+    }
+
+    &-verticalItem {
+        padding-bottom: 15px;
+    }
+
+    &-horizontal {
+        padding-top: 10px;
+        margin-bottom: 18px;
+    }
+
+    &-horizontalItem {
+        display: flex;
+    }
+
+    &-imageContainer {
+        width: 100%;
+        height: 115px;
+        background-color: lightgray;
+        border-radius: 30px;
+    }
+
+    &-verticalImageContainer {
+        margin-bottom: 10px;
+    }
+
+    &-horizontalImageContainer {
+        width: 105px;
+        height: 95px;
+    }
+
+    &-textContainer {
+        padding-left: 15px;
+        line-height: 1.7;
+    }
+
+    &-horizontalTextContainer {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        padding-top: 0px;
+        padding-left: 20px;
+    }
+
+    &-title {
+        font-size: 14px;
+        font-weight: 500;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: block;
+    }
+
+    &-price {
+        font-size: 15px;
+        margin: 0;
+        width: 100%;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+    }
+
+    &-likeButton {
+        background-color: transparent;
+        border: 0;
+        font-size: 15px;
+    }
+
+    &-horizontalLikeButton {
+        right: 25px;
+        bottom: 43px;
+    }
+
+    &-size {
+        color: #AAAAAA;
+        font-size: 14px;
+        margin-left: 10px;
+        
+        strong {
+            color: black;
+            padding-left: 3px;
+        }
+    }
+
+    &-delete {
+        background-color: #005633;
+        color: white;
+        width: 25px;
+        height: 25px;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    &-amount {
+        position: absolute;
+        right: 15px;
+        bottom: 20px;
+    }
+}
